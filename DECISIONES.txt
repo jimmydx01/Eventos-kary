@@ -1,0 +1,75 @@
+EVENTOS D'KARY — DECISIONES Y GUÍA DEL MODO DEMO
+================================================
+
+OBJETIVO
+--------
+Dar a la página una presentación más actual, atractiva y cercana, facilitar
+que los clientes consulten los servicios y dejar disponible el panel para
+mostrar sus funciones en una demostración.
+
+DISEÑO Y EXPERIENCIA
+--------------------
+- Portada con una imagen protagonista, mensaje cálido, botones visibles y
+  navegación sencilla hacia los servicios.
+- Colores ciruela, coral, crema y dorado para dar una identidad festiva y
+  elegante sin perder legibilidad.
+- Catálogo de servicios en tarjetas con fotografía, descripción, consulta
+  por WhatsApp y opción de copiar un enlace directo al servicio.
+- Diseño adaptable a teléfonos, tabletas y computadoras.
+- El texto evita reseñas o calificaciones inventadas: se muestran los
+  servicios y la información disponible, sin atribuir opiniones a clientes.
+- Las fotografías y la tipografía se cargan desde Unsplash/Google Fonts;
+  hace falta conexión a Internet para obtener esos recursos externos.
+
+ARCHIVOS DEL PROYECTO
+---------------------
+- index.html: estructura inicial, datos públicos de los servicios y carga de
+  los archivos de estilos y scripts.
+- css/styles.css: colores, tipografía, distribución y adaptación a pantallas.
+- js/public-view.js: contenido y tarjetas de la página pública.
+- js/demo-data.js: registros de ejemplo para probar los informes.
+- js/app.js: navegación, interacciones y operaciones del panel.
+- js/admin-login.js se quitó: este demo no tiene inicio de sesión ni clave.
+- img/LEEME.txt: indicaciones para agregar fotografías propias.
+
+ADMINISTRACIÓN: ACCESO DE DEMOSTRACIÓN
+--------------------------------------
+- Entrada: botón "Admin demo" de la portada o "Administración · modo demo"
+  al final de la página.
+- Usuario: no se necesita.
+- Clave/contraseña: no se necesita.
+- El botón abre el panel de muestra directamente; "Salir del demo" vuelve
+  a la página pública.
+- No hay credenciales predeterminadas ni una contraseña que compartir.
+- El panel conserva las secciones de inventario, eventos, préstamos,
+  servicios y contacto, e informes. El informe permite cargar y quitar
+  registros de prueba.
+
+IMPORTANTE: LÍMITES DE SEGURIDAD Y DATOS
+----------------------------------------
+Esta aplicación es una página estática sin servidor ni autenticación real.
+El panel demo no está protegido: cualquier visitante puede abrirlo, y los
+datos de inventario, eventos y préstamos se guardan en el almacenamiento
+local del navegador que se esté usando. No guardes datos personales,
+contraseñas, información confidencial ni registros reales aquí.
+
+El botón "Publicar cambios" descarga un nuevo index.html para reemplazar
+el publicado. Los cambios públicos del catálogo y el contacto pueden quedar
+visibles para cualquiera que visite la web. Antes de usar el panel con datos
+reales o publicar información sensible, hace falta implementar un servidor
+con autenticación y almacenamiento adecuados.
+
+CONTENIDO Y CAMBIOS
+-------------------
+- Los servicios y el número de WhatsApp se editan en "Servicios y contacto".
+- El botón "Publicar cambios" descarga el index.html actualizado; hay que
+  subir ese archivo al hosting para publicar los cambios.
+- La información local del panel no se incluye en esa descarga.
+- Los datos de demostración del informe se pueden quitar sin borrar los
+  registros que no sean de prueba.
+
+PARA ABRIR
+----------
+Abre index.html en un navegador. Para que WhatsApp abra una conversación,
+primero configura el número con código de país en el panel demo y publica
+los cambios.

@@ -1,0 +1,1 @@
+Guarda aquí las fotos de los servicios. Puedes referenciarlas desde el HTML con rutas como imagenes/mesas.jpg.
